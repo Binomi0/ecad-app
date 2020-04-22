@@ -3,7 +3,7 @@
 const express = require("express");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
-const routes = require("./controllers");
+const api = require("./controllers");
 const routesBoot = require("./routes-boot");
 const { mongoose } = require("../config/db");
 const { sessionConfig } = require("../config/server");
@@ -32,7 +32,7 @@ module.exports = (app) => {
   const s = session(newSession);
   app.use(s);
 
-  const router = routesBoot(routes, []);
+  const router = routesBoot(api, []);
 
   app.use("/", router);
   app.use("/doc", [express.static("doc/_book")]);

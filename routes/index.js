@@ -1,3 +1,3 @@
-const home = require("./home");
+const certificados = require("./certificados");
 
-module.exports = home;
+module.exports = certificados;

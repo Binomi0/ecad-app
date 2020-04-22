@@ -4,7 +4,7 @@ var dni = document.getElementById("dni");
 var formacion = document.getElementById("formacion");
 
 // Recuperamos el id del título de la URL
-var pathname = window.location.pathname.split("/");
+var pathname = window.location.search.split("=");
 var id = pathname.pop();
 
 // Realizamos la petición al servidor

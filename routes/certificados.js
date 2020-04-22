@@ -1,6 +1,6 @@
 const { TituloModel } = require("../models");
 
-const home = (req, res) => {
+const certificados = (req, res) => {
   const { id } = req.params;
 
   TituloModel.findById(id)
@@ -12,10 +12,23 @@ const home = (req, res) => {
     });
 };
 
-module.exports = {
-  method: "get",
-  path: "/certificados/:id",
-  handler: home,
-  middlewares: [],
-  skipDefaultMiddlewares: true,
+const home = (req, res) => {
+  res.render("home");
 };
+
+module.exports = [
+  {
+    method: "get",
+    path: "/",
+    handler: home,
+    middlewares: [],
+    skipDefaultMiddlewares: true,
+  },
+  {
+    method: "get",
+    path: "/certificados/:id",
+    handler: certificados,
+    middlewares: [],
+    skipDefaultMiddlewares: true,
+  },
+];

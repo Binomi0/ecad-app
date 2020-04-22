@@ -5,4 +5,4 @@ const titulo = require("./titulo")(services);
 
 const home = require("../../routes");
 
-module.exports = [home, ...monit, ...titulo];
+module.exports = [...home, ...monit, ...titulo];

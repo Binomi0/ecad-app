@@ -6,7 +6,7 @@ module.exports = ({ tituloService }) => {
   return [
     {
       method: "get",
-      path: "/titulo/:id",
+      path: "/api/titulo/:id",
       handler: tituloController.get,
       bindTo: tituloController,
       middlewares: [],
@@ -14,7 +14,7 @@ module.exports = ({ tituloService }) => {
     },
     {
       method: "get",
-      path: "/titulos",
+      path: "/api/titulos",
       handler: tituloController.getAll,
       bindTo: tituloController,
       middlewares: [],
@@ -22,7 +22,7 @@ module.exports = ({ tituloService }) => {
     },
     {
       method: "post",
-      path: "/titulo",
+      path: "/api/titulo",
       handler: tituloController.create,
       bindTo: tituloController,
       middlewares: [],
@@ -30,7 +30,7 @@ module.exports = ({ tituloService }) => {
     },
     {
       method: "put",
-      path: "/titulo/:id",
+      path: "/api/titulo/:id",
       handler: tituloController.update,
       bindTo: tituloController,
       middlewares: [],
@@ -38,7 +38,7 @@ module.exports = ({ tituloService }) => {
     },
     {
       method: "delete",
-      path: "/titulo/:id",
+      path: "/api/titulo/:id",
       handler: tituloController.delete,
       bindTo: tituloController,
       middlewares: [],

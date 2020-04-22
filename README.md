@@ -56,3 +56,11 @@ GET /api/titulo/:id
 ### Ver titulo
 
 DELETE /api/titulo/:id
+
+## Ver todos los títulos
+
+- Éste endpoint debería ser securizado
+
+## Para hacer cópias de seguridad
+
+GET /api/titulos

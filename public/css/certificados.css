@@ -21,7 +21,12 @@ img.logo {
   width: 173px;
 }
 
+a.nav-link {
+  color: #fff !important;
+}
+
 .link {
+  color: #fff;
   height: 60px;
   font-family: "Open Sans", sans-serif;
 }
@@ -76,6 +81,7 @@ p.header-link {
 .links {
   margin-bottom: 3rem;
 }
+
 .error {
   min-height: 400px;
   display: flex;

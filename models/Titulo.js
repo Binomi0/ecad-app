@@ -11,7 +11,7 @@ const Titulo = new mongoose.Schema(
     fechaInicio: { type: Date, required: true },
     fechaFin: { type: Date, required: true },
     formacion: { type: String, required: true },
-    codigo: { type: String, index: true },
+    codigo: { type: String, index: true, unique: true },
   },
   {
     versionKey: false,

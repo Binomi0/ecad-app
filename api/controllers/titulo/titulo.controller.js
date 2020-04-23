@@ -6,7 +6,13 @@ class TituloController {
   get(req, res) {
     Promise.resolve()
       .then(() => this.tituloService.get(req.params.id))
-      .then(res.send.bind(res))
+      .then((titulo) => {
+        if (!titulo) {
+          res.sendStatus(204);
+        } else {
+          res.send(titulo);
+        }
+      })
       .catch((err) => res.send({ status: 400, error: err }));
   }
 

@@ -4,7 +4,7 @@ class HealthService {
   }
 
   async get(codigo) {
-    return this.TituloModel.findOne({ codigo });
+    return this.TituloModel.findOne({ codigo }, { _id: 0 });
   }
 
   getAll() {

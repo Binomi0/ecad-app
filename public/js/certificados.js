@@ -20,15 +20,18 @@ function onDownloadProgress({ loaded, total }) {
 
 // Realizamos la petición al servidor
 axios
-  .get("https://ecad-app.herokuapp.com/api/titulo/" + id, {
+  .get("https://ecad-app.herokuapp.com/api/titulo" + id, {
     onDownloadProgress,
   })
   .then((res) => {
-    nombre.innerHTML = res.data.nombre;
-    formacion.innerHTML = res.data.formacion;
-    progress.style.display = "none";
-    section.style.visibility = "visible";
-    // Actualizamos los campor con la respuesta
+    if (res.status === 204) {
+      window.location.href = "/error.html";
+    } else {
+      nombre.innerHTML = res.data.nombre;
+      formacion.innerHTML = res.data.formacion;
+      progress.style.display = "none";
+      section.style.visibility = "visible";
+    }
   })
   .catch((err) => {
     console.log("err", err);

@@ -20,7 +20,7 @@ function onDownloadProgress({ loaded, total }) {
 
 // Realizamos la petición al servidor
 axios
-  .get("https://ecad-app.herokuapp.com/api/titulo" + id, {
+  .get("https://ecad-app.herokuapp.com/api/titulo/" + id, {
     onDownloadProgress,
   })
   .then((res) => {

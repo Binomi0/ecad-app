@@ -4,8 +4,8 @@ const certificados = (req, res) => {
   const { id } = req.params;
 
   TituloModel.findById(id)
-    .then(({ nombre, dni, formacion }) => {
-      res.render("certificados", { nombre, dni, formacion });
+    .then(({ nombre, formacion }) => {
+      res.render("certificados", { nombre, formacion });
     })
     .catch((err) => {
       res.render("error");

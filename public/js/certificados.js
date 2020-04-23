@@ -1,6 +1,5 @@
 // Recogemos los campos del DOM que vamos a necesitar actualizar
 var nombre = document.getElementById("nombre");
-var dni = document.getElementById("dni");
 var formacion = document.getElementById("formacion");
 var section = document.getElementById("certificado");
 var spinner = document.getElementById("certificado-spinner");
@@ -21,10 +20,11 @@ function onDownloadProgress({ loaded, total }) {
 
 // Realizamos la petición al servidor
 axios
-  .get("http://api.ecad.es/api/titulo/" + id, { onDownloadProgress })
+  .get("https://ecad-app.herokuapp.com/api/titulo/" + id, {
+    onDownloadProgress,
+  })
   .then((res) => {
     nombre.innerHTML = res.data.nombre;
-    dni.innerHTML = res.data.dni;
     formacion.innerHTML = res.data.formacion;
     progress.style.display = "none";
     section.style.visibility = "visible";
@@ -33,7 +33,7 @@ axios
   .catch((err) => {
     console.log("err", err);
     // Redireccionamos a la página de error
-    // window.location.href = "/error.html";
+    window.location.href = "/error.html";
   });
 
 // Evitar el click derecho sobre la página

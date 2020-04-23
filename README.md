@@ -13,11 +13,9 @@ POST /api/titulo
 ```json
 {
   "nombre": "Nombre",
-  "dni": "4343434S-F",
   "fechaInicio": 1579698596000,
   "fechaFin": 1587560996000,
-  "formacion": "Master en... y módulo...",
-  "codigo": 2333
+  "formacion": "Master en... y módulo..."
 }
 ```
 
@@ -43,11 +41,9 @@ GET /api/titulo/:id
 {
   "_id": "5ea0836c552adc001728a87b",
   "nombre": "Nombre",
-  "dni": "4343434S",
   "fechaInicio": "2020-01-22T13:09:56.000Z",
   "fechaFin": "2020-04-22T13:09:56.000Z",
   "formacion": "formacion",
-  "codigo": "2333",
   "createdAt": "2020-04-22T17:48:28.902Z",
   "updatedAt": "2020-04-22T17:48:28.902Z"
 }

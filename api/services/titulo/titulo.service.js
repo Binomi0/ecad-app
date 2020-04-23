@@ -3,8 +3,8 @@ class HealthService {
     this.TituloModel = tituloModel;
   }
 
-  async get(id) {
-    return this.TituloModel.findById(id);
+  async get(codigo) {
+    return this.TituloModel.findOne({ codigo });
   }
 
   getAll() {
@@ -15,12 +15,12 @@ class HealthService {
     return this.TituloModel.create(newTitulo);
   }
 
-  async update(id, fields) {
-    return this.TituloModel.findByIdAndUpdate(id, fields, { new: true });
+  async update(codigo, fields) {
+    return this.TituloModel.findOneAndUpdate({ codigo }, fields, { new: true });
   }
 
-  async delete(id) {
-    return this.TituloModel.findByIdAndDelete(id);
+  async delete(codigo) {
+    return this.TituloModel.findOneAndDelete({ codigo });
   }
 }
 

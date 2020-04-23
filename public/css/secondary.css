@@ -1,17 +1,21 @@
-
 /*************************
 *******Typography******
 **************************/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #666;
   background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
 }
 
@@ -66,9 +70,9 @@ h3 {
 
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
-  outline:none;
+  outline: none;
   outline-offset: 0;
-  text-decoration:none;
+  text-decoration: none;
   background: transparent;
 }
 
@@ -83,15 +87,15 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  outline: none
+  outline: none;
 }
 
 section {
-  padding: 70px 0; <!aquÃ­ estÃ¡ para controlar la altura de la secciÃ³n servicios->
+  padding: 70px 0;
 }
 
 .heading {
-  padding-bottom:90px;
+  padding-bottom: 90px;
 }
 
 .preloader {
@@ -116,7 +120,6 @@ section {
   margin-left: -15px;
   display: inline-block;
 }
-
 
 /*************************
 ********Home CSS**********
@@ -151,14 +154,14 @@ section {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  padding:14px 40px;
+  padding: 14px 40px;
   border: 1px solid #6e6d6c;
   border-radius: 4px;
   margin-top: 40px;
 }
 
 .caption .btn-start:hover {
-  color: #fff
+  color: #fff;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -177,7 +180,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .carousel-fade .carousel-inner .active {
@@ -197,14 +200,15 @@ section {
   z-index: 2;
 }
 
-.left-control, .right-control {
+.left-control,
+.right-control {
   position: absolute;
   top: 50%;
   height: 51px;
   width: 51px;
   line-height: 48px;
   border-radius: 50%;
-  border:1px solid #fff;
+  border: 1px solid #fff;
   z-index: 20;
   font-size: 24px;
   color: #fff;
@@ -217,7 +221,7 @@ section {
 }
 
 .left-control {
-  left: -51px
+  left: -51px;
 }
 
 .right-control {
@@ -230,11 +234,11 @@ section {
 }
 
 #home-slider:hover .left-control {
-  left:30px
+  left: 30px;
 }
 
 #home-slider:hover .right-control {
-  right:30px
+  right: 30px;
 }
 
 #home-slider .fa-angle-down {
@@ -262,7 +266,7 @@ section {
 }
 
 .navbar-right li.active a {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand h1 {
@@ -290,21 +294,21 @@ section {
 }
 
 .our-services .col-sm-4 {
-  border-right:1px solid #f2f2f2;
-  border-bottom:1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   padding-bottom: 50px;
 }
 
 .our-services .col-sm-4:nth-child(4),
 .our-services .col-sm-4:nth-child(5),
 .our-services .col-sm-4:nth-child(6) {
-  border-bottom:0;
+  border-bottom: 0;
   padding-top: 60px;
 }
 
 .our-services .col-sm-4:nth-child(3),
 .our-services .col-sm-4:nth-child(6) {
-  border-right:0;
+  border-right: 0;
 }
 
 .service-info h3 {
@@ -333,7 +337,7 @@ section {
   margin-bottom: 30px;
 }
 
-.progress{
+.progress {
   height: 20px;
   background-color: #fff;
   border-radius: 0;
@@ -342,7 +346,7 @@ section {
   margin-bottom: 25px;
 }
 
-.progress-bar{
+.progress-bar {
   box-shadow: none;
   -webkit-box-shadow: none;
   text-align: right;
@@ -351,10 +355,9 @@ section {
   font-weight: 600;
 }
 
-
 .progress .progress-bar.six-sec-ease-in-out {
   -webkit-transition: width 2s ease-in-out;
-  transition:  width 2s ease-in-out;
+  transition: width 2s ease-in-out;
 }
 
 /*************************
@@ -362,7 +365,7 @@ section {
 **************************/
 
 #portfolio .container-fluid,
-#portfolio .col-sm-3  {
+#portfolio .col-sm-3 {
   overflow: hidden;
   padding: 0;
 }
@@ -375,12 +378,12 @@ section {
   background-color: #000;
   color: #fff;
   left: 0;
-  right:0;
-  bottom:-100%;
+  right: 0;
+  bottom: -100%;
   height: 0;
   position: absolute;
   text-align: center;
-  opacity:0;
+  opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -431,7 +434,8 @@ section {
   margin-left: -500px;
 }
 
-.folio-image, .folio-overview .folio-expand {
+.folio-image,
+.folio-overview .folio-expand {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
@@ -453,15 +457,14 @@ section {
 
 #portfolio .folio-item:hover .folio-overview .folio-expand {
   margin-top: 0;
-  margin-left:0;
+  margin-left: 0;
 }
 
 #portfolio .folio-item:hover .overlay .folio-info {
   opacity: 1;
-  margin-bottom:0;
-  margin-top:0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
-
 
 #single-portfolio {
   padding: 90px 0;
@@ -497,7 +500,7 @@ section {
 }
 
 .social-icons {
-  margin-top:30px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -518,7 +521,7 @@ section {
 }
 
 .social-icons ul li a {
-  color:#fff;
+  color: #fff;
   background-color: #d9d9d9;
   height: 36px;
   width: 54px;
@@ -570,7 +573,6 @@ section {
   color: #999;
 }
 
-
 /*************************
 *******Features CSS*******
 **************************/
@@ -594,7 +596,6 @@ section {
   opacity: 0.8;
 }
 
-
 /*************************
 *****Pricing Table CSS****
 **************************/
@@ -604,7 +605,7 @@ section {
 
 .single-table {
   padding: 30px 20px 20px;
-  border:1px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .single-table h3 {
@@ -661,7 +662,7 @@ section {
 
 #twitter-carousel {
   position: relative;
-  z-index: 15
+  z-index: 15;
 }
 
 .twitter-icon {
@@ -709,13 +710,13 @@ section {
   top: 50%;
   color: #fff;
   border: 1px solid #fafafa;
-  height:34px;
+  height: 34px;
   width: 34px;
   line-height: 31px;
   margin-top: -17px;
   font-size: 18px;
   border-radius: 50%;
-  z-index: 15
+  z-index: 15;
 }
 
 .twitter-left-control {
@@ -723,13 +724,13 @@ section {
 }
 
 .twitter-right-control {
-  right: 80px
+  right: 80px;
 }
 
-.twitter-left-control:hover, .twitter-right-control:hover {
+.twitter-left-control:hover,
+.twitter-right-control:hover {
   color: #fff;
 }
-
 
 /*************************
 **********Blog CSS********
@@ -741,12 +742,12 @@ section {
 
 .post-icon {
   position: absolute;
-  top:10px;
-  right:10px;
+  top: 10px;
+  right: 10px;
   height: 30px;
   width: 30px;
   line-height: 30px;
-  border-radius:4px;
+  border-radius: 4px;
   text-align: center;
   color: #fff;
   font-size: 12px;
@@ -771,12 +772,13 @@ section {
   left: 90%;
 }
 
-.blog-left-control, .blog-right-control {
+.blog-left-control,
+.blog-right-control {
   position: absolute;
   top: 45%;
   width: 30px;
   text-align: center;
-  color: rgba(255,255,255,.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 36px;
 }
 
@@ -788,7 +790,8 @@ section {
   right: 0;
 }
 
-.blog-left-control:hover, .blog-right-control:hover {
+.blog-left-control:hover,
+.blog-right-control:hover {
   color: #fff;
 }
 
@@ -810,7 +813,7 @@ section {
   content: "";
   position: absolute;
   left: 0;
-  bottom:-22px;
+  bottom: -22px;
   width: 20px;
   height: 3px;
 }
@@ -820,7 +823,7 @@ section {
 }
 
 .load-more {
-  display:block;
+  display: block;
   text-align: center;
   margin-top: 70px;
 }
@@ -835,7 +838,7 @@ section {
 }
 
 .btn-loadmore:hover {
-  color:#fff;
+  color: #fff;
 }
 
 /*************************
@@ -852,7 +855,7 @@ section {
 }
 
 #contact-us {
-  background-image:url(../images/contact-bg.jpg);
+  background-image: url(../images/contact-bg.jpg);
   padding-bottom: 90px;
 }
 
@@ -862,7 +865,7 @@ section {
 
 .form-control {
   background-color: transparent;
-  border-color: rgba(255,255,255,.1);
+  border-color: rgba(255, 255, 255, 0.1);
   height: 50px;
   border-radius: 0;
   box-shadow: none;
@@ -870,7 +873,7 @@ section {
 
 textarea.form-control {
   min-height: 180px;
-  resize:none;
+  resize: none;
 }
 
 .form-group {
@@ -878,7 +881,7 @@ textarea.form-control {
 }
 
 .contact-info {
-  padding-left:70px;
+  padding-left: 70px;
   font-weight: 300;
 }
 
@@ -902,17 +905,17 @@ ul.address {
   padding: 12px;
   width: 100%;
   color: #fff;
-  border:0;
+  border: 0;
   margin-top: 40px;
 }
 
 #footer {
-  color:#fff;
+  color: #fff;
 }
 
 .footer-top {
   position: relative;
-  padding:30px 0
+  padding: 30px 0;
 }
 
 #footer .footer-bottom {
@@ -940,17 +943,17 @@ ul.address {
 }
 
 #footer .social-icons ul li a {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   line-height: 33px;
 }
 
 #footer .social-icons ul li a:hover {
-  color: #fff
+  color: #fff;
 }
 
 #footer .social-icons ul li a.envelope:hover {
-  background-color: #CECB26;
+  background-color: #cecb26;
 }
 
 #footer .social-icons ul li a.facebook:hover {
@@ -970,4 +973,3 @@ ul.address {
 }
 
 /*Presets*/
-

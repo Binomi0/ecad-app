@@ -2,7 +2,41 @@
 
 Servicio para leer, añadir, modificar y eliminar titulaciones
 
-## API Server
+- [Servicios](#servicios)
+  - [Servidor](#servidor)
+  - [Base de datos](#base-de-datos)
+  - [Control de versiones](#control-de-versiones)
+
+# Servicios
+
+## Servidor
+
+### Descripción
+
+Se compone de un servidor NodeJS basado en express que sirve un CRUD sobre títulos
+
+### Acceso
+
+Alojado en Heroku.com
+
+> https://dashboard.heroku.com/pipelines/dd3ef81e-16b7-4f2f-ac71-83e669396f3b/settings
+
+## Base de datos
+
+NoSQL - MongoDB
+Se compone de una instancia de Mongo Atlas
+
+## Acceso
+
+> https://cloud.mongodb.com/v2/5ea04ae5ecad6b18c6cb872c#clusters
+
+## Control de versiones
+
+> https://github.com/Binomi0/ecad-app
+
+# USO
+
+## Descripción de la API
 
 URL: http://api.ecad.es
 

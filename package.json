@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "12"
+    "node": "18"
   },
   "scripts": {
     "start": "NODE_ENV=production node ./bin/www",
